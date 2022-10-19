@@ -3,10 +3,11 @@
     padding: 0;
 }
 
+
 :root{
     --text-color: rgb(42, 42, 241);
-    --text-size-before-hover: 19px;
-    --text-size-after-hover: 25px;
+    --text-size-before-hover: 100%;
+    --text-size-after-hover: 150%;
     --text-color-before-hover: rgb(16, 15, 15);
     --text-color-after-hover: rgb(48, 83, 221);
     --gray-rgba-color:rgba(128,128,128, 0.5);
@@ -19,22 +20,99 @@
         -90deg,transparent, transparent, rgba(84, 101, 158, 0.5)), 
     linear-gradient(
         90deg,transparent, transparent, rgba(84, 101, 158, 0.5));
-    width: auto;
-    
+    width: 100%;
+    z-index: 9;
     text-align: center;
     
     
 }
 
 .banner h1{
-   margin: auto auto;
-    font-size: xx-large;
+   margin: 2% auto;
+    font-size: 190%;
     color:var(--text-color);
     width: 100%;
     
 }
 
+.form-container{
+    display: none;
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    overflow:auto;
+    margin: auto auto;
+    justify-content: center;
+    align-items: center;
+    background: rgba(7, 8, 7, 0.9);
+    text-align: center;
+    margin-left: 70%; 
+    z-index: 10;  
+    transition: all 0.4s linear;
+     
+}
+
+input:checked + .form-container{   
+    display: flex; 
+}
+ #toogle{
+    top: 0;
+    position: absolute;
+    visibility: hidden;
+    height: 10px;
+}    
+
+#form-toogle{
+    display: block;
+    margin-top:  2%;
+    margin-right: 2%;
+    position: absolute;
+    right: 0;
+    z-index: 11;
+}
+
+
+
+.menu-icon{
+        width: 35px;
+        height: 6px;
+        background-color: rgba(128,160,128, 0.8);
+        margin: 10% 0;
+      
+}
+
+#comments{
+    visibility: hidden;
+}
+
+
+.form-container .form{
+    color: white;
+    display: flex;
+    position: relative;
+    margin: auto auto;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 95%;
+}
+
+
+textarea, input, button{
+    width: 100%;
+    background-color: rgba(128,128,128, 0.5);
+    color: inherit;
+    resize: none;
+    
+}
+
+.comment{
+    height: 30px;
+}
+
+
 .nav-container{
+    z-index: 5;
     display: flex;
     background: linear-gradient(
     15deg, transparent, transparent, #a33faa), 
