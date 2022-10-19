@@ -1,0 +1,228 @@
+
+.wrap{
+    margin: 0;
+    background-color: rgba(255, 245, 255, 0.5);
+}
+/* Rows */
+
+.columns{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 0.4%;
+    
+}
+.column-child p{
+    margin: 0 15px;
+}
+.column-child{
+    border-bottom: 0.7px dotted black;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: "one" "two" "three";
+    
+    width: 99%;
+    
+}
+
+.column1{
+    grid: "one";
+    height: fit-content; 
+    
+    width: 100%;
+    
+    text-align: center;
+    
+}
+.column1 img{
+    height: 40%;
+    border-radius: 13px;
+    width:90%;
+    border: 0.3px solid black;
+
+}
+
+.column2{
+    grid: "two";
+    text-align: center;
+    
+    width: 100%;
+    height: fit-content;
+    border-right: 0.4px dotted firebrick;
+    border-left: 0.4px dotted black;
+   
+    
+}
+.column2 img{
+    border-radius: 12px;
+    height: 30%;
+    width:80%;
+    border: 0.3px solid black;
+   
+}
+
+.column3{
+    text-align: center;
+    grid: "three";
+    
+    width: 100%;  
+    height: fit-content; 
+}
+
+.column3 img{
+    border-radius: 12px;
+    height: 30%;
+    width:80%;
+    border: 0.3px solid black;
+}
+.column3 ul li{
+    list-style: none;
+}
+
+/* Ai Video Container*/
+.ai-vid-container{
+   margin-top: 0;
+ width: 100% ;
+    height: 48vh;
+    background: linear-gradient(
+    100deg, transparent, transparent, rgba(20, 10, 166, 0.3)), linear-gradient(
+        220deg, transparent, transparent, rgba(20, 10, 166, 0.3)),
+        rgba(120, 70, 55, 0.7);
+}
+
+
+.ai-vid{
+   display: flex;
+   align-items: center;
+   height: 99%;
+   justify-content: center;
+   
+}
+iframe{
+    opacity: 0.7;
+    margin: auto auto;
+
+
+}
+
+
+
+
+/* Rows */
+
+.row{
+    position: relative;
+    display: flex;
+    grid-template-rows: fit-content;
+    height: fit-content;
+    
+}
+
+.row-child{
+    border: 0px dotted black;
+    display: grid;
+    background: rgba(255, 245, 255, 0.5);
+    height: 100%;
+   
+    
+}
+.rows .pros-cons{
+    
+    text-align: center;
+    background-color: inherit;
+    
+}
+
+.row1{
+    grid: "one";
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    margin-top: 7%;
+    
+}
+.row1 h2{
+    text-align: center;
+}
+.row1 ol {
+    list-style-type: circle;
+    padding-top: 10%;
+}
+.row1 ol li{
+    list-style-type: circle;
+    
+}
+
+
+.row-child .box-picture1{
+    display: flex;
+    position: absolute;
+    background: blue;
+    width: 33%;
+    margin-left: 10%;
+    margin-top: 2%;
+    border-radius: 30%;
+}
+
+
+
+.row-child img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 7%;  
+}
+
+
+
+
+.row2{
+   text-align: center;
+    margin-top: 1px;
+    grid: "two";
+  
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 8%;
+   
+    
+}
+.row-child .box-picture2{
+    display: flex;
+    position: absolute;
+    background: blue;
+    width: 33%;
+    margin-left: 62%;
+    margin-top: 53%;
+    border-radius: 30%;
+}
+.row2 ol{
+    padding-bottom: 7%;
+}
+
+.row3{
+    margin-top: 6%;
+    text-align: center;
+    text-transform: lowercase;
+    grid: "three";
+    border: 0.2px dotted black;
+    width: 100%;
+    height: fit-content;
+}
+
+.row3 .farewell{
+    margin: 5% 5%;
+
+}
+.row3 .farewell span{
+    font-weight: 400;
+    text-transform: capitalize;
+
+}
+.row3 .remarks{
+    margin-bottom: 2%;
+}
+
+
+
