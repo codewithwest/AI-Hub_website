@@ -8,23 +8,27 @@
     --text-size-before-hover: 19px;
     --text-size-after-hover: 25px;
     --text-color-before-hover: rgb(16, 15, 15);
-    --text-color-after-hover: rgb(72, 196, 78);
+    --text-color-after-hover: rgb(48, 83, 221);
     --gray-rgba-color:rgba(128,128,128, 0.5);
     
     
 }
 .banner{
+    display: flex;
     background:linear-gradient(
         -90deg,transparent, transparent, rgba(84, 101, 158, 0.5)), 
     linear-gradient(
         90deg,transparent, transparent, rgba(84, 101, 158, 0.5));
     width: auto;
-    height: auto;
+    height: 10vh;
+    text-align: center;
+    
     
 }
 
 .banner h1{
-    text-align: center;
+   margin: auto auto;
+    font-size: xx-large;
     color:var(--text-color);
     width: 100%;
     
@@ -67,6 +71,7 @@
     color: var(--text-color-after-hover);
     text-decoration: wavy;
     font-weight: bold;
+    text-shadow: inset 2px 2px 8px #FF0000; 
 }
 
 .active{
@@ -161,7 +166,7 @@
 
 
 .home .headergraph1{
-    font-size: larger;
+    font-size: x-large;
     text-align: center;
 }
 
@@ -182,6 +187,11 @@
     text-decoration: none;
 }
 
+ .bottom-welcome p{
+    font-size: var(--text-size-before-hover);
+    font-weight: bold;
+    
+}
 
 /* Footer*/
 #content{
@@ -199,7 +209,7 @@
 #footer {
     background-color: var(--gray-rgba-color);
     padding: 20px;
-    border-top: 1px solid #f1f1f1;
+   
 }
 
 .west3-center {
@@ -219,3 +229,6 @@
   float: right;
 
 }
+    .west3-center a{
+        text-decoration: none;
+    }

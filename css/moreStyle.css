@@ -1,10 +1,21 @@
-
+*{
+    font-size: large;
+}
 .wrap{
     margin: 0;
-    background-color: rgba(255, 245, 255, 0.5);
-}
-/* Rows */
 
+    background: linear-gradient(20deg, transparent, rgba(0, 10, 4, 0.5),
+    rgba(255, 245, 255, 0.5));
+
+}
+.wrap h1{
+    font-size: 150%;
+}
+/* Columns */
+
+.columns h2{
+    font-size: 100%;
+}
 .columns{
     position: relative;
     display: grid;
@@ -83,12 +94,17 @@
 /* Ai Video Container*/
 .ai-vid-container{
    margin-top: 0;
- width: 100% ;
+ width: 99.4% ;
     height: 48vh;
     background: linear-gradient(
-    100deg, transparent, transparent, rgba(20, 10, 166, 0.3)), linear-gradient(
+    100deg, transparent, 
+    transparent, rgba(169, 169, 169, 0.3)), 
+    linear-gradient(
         220deg, transparent, transparent, rgba(20, 10, 166, 0.3)),
-        rgba(120, 70, 55, 0.7);
+        rgba(169, 169, 165, 0.7);
+    margin: 0.5%;
+    box-shadow:  -5px 5px 0 0 rgba(54, 176, 206, 0.3) inset,
+    5px -5px 0 0 rgba(54, 176, 206, 0.3) inset;
 }
 
 
@@ -98,12 +114,12 @@
    height: 99%;
    justify-content: center;
    
+   
 }
 iframe{
     opacity: 0.7;
     margin: auto auto;
-
-
+    
 }
 
 
@@ -115,35 +131,40 @@ iframe{
     position: relative;
     display: flex;
     grid-template-rows: fit-content;
-    height: fit-content;
+    
+   
     
 }
-
 .row-child{
-    border: 0px dotted black;
     display: grid;
-    background: rgba(255, 245, 255, 0.5);
     height: 100%;
    
     
 }
-.rows .pros-cons{
-    
+.rows .pros-cons{ 
     text-align: center;
-    background-color: inherit;
-    
 }
 
 .row1{
+    border: 3px solid rgba(96, 124, 132, 0.703);
+    box-shadow:  -5px 5px 0 0 rgba(54, 176, 206, 0.5) inset,
+    5px -5px 0 0 rgba(54, 176, 206, 0.5) inset;
     grid: "one";
     text-align: center;
     width: 100%;
-    height: fit-content;
+    background: linear-gradient(20deg, transparent, rgba(230, 240, 230, 0.5));
     margin-top: 7%;
+
     
 }
 .row1 h2{
     text-align: center;
+    
+}
+.row1 .pros{
+    margin-bottom: 0;
+    margin-left: 1%;
+    margin-top: 5%;
 }
 .row1 ol {
     list-style-type: circle;
@@ -153,9 +174,13 @@ iframe{
     list-style-type: circle;
     
 }
+.row1 p{
+    margin: 0 5%;
+}
 
 
 .row-child .box-picture1{
+
     display: flex;
     position: absolute;
     background: blue;
@@ -165,51 +190,53 @@ iframe{
     border-radius: 30%;
 }
 
-
-
 .row-child img{
+    border: 3px solid rgba(0, 195, 255, 0.6);
+    box-shadow:  -5px 5px 0 0 rgba(54, 176, 206, 0.5) inset,
+    5px -5px 0 0 rgba(54, 176, 206, 0.5) inset;
     position: relative;
     height: 100%;
     width: 100%;
     border-radius: 7%;  
 }
 
-
-
-
 .row2{
+   
    text-align: center;
     margin-top: 1px;
     grid: "two";
-  
     width: 100%;
-    height: fit-content;
+    height: 100%;
     margin-bottom: 8%;
+    background: linear-gradient(20deg, transparent, rgba(35, 61, 73, 0.5));
+    border: 3px solid rgba(0, 195, 255, 0.6);
+    box-shadow:  -5px 5px 0 0 rgba(54, 176, 206, 0.5) inset,
+    5px -5px 0 0 rgba(54, 176, 206, 0.5) inset;
+
    
     
 }
 .row-child .box-picture2{
     display: flex;
     position: absolute;
-    background: blue;
     width: 33%;
     margin-left: 62%;
-    margin-top: 53%;
     border-radius: 30%;
-}
-.row2 ol{
-    padding-bottom: 7%;
+
 }
 
 .row3{
-    margin-top: 6%;
+    margin-top: 15%;
     text-align: center;
     text-transform: lowercase;
     grid: "three";
-    border: 0.2px dotted black;
+
+    background: linear-gradient(90deg, transparent, rgba(0, 3, 4, 0.5));
     width: 100%;
-    height: fit-content;
+    box-shadow: inset 0 0 -15px -15px  rgb(82, 82, 88) ;
+    
 }
+
 
 .row3 .farewell{
     margin: 5% 5%;
@@ -223,6 +250,26 @@ iframe{
 .row3 .remarks{
     margin-bottom: 2%;
 }
+.row3 .remarks{
+    margin-bottom: 2%;
+}
 
+
+.row3 .remarks i{
+    position: relative;
+    animation: farewell 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 5ms;
+    color: blueviolet;
+ 
+}
+@keyframes farewell {
+    from{font-size: inherit;}
+    to{font-size: x-large;}
+    from{opacity: 0.9;}
+    to{opacity: 0.1;}
+    from {top: -7px;}
+    to {top: 5px;}
+  }
 
 
