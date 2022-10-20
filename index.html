@@ -15,20 +15,20 @@
     <input type="checkbox" id="toogle" value=""  placeholder="" >
     <div class="form-container">
         <div class="form">
-
         <form>
-            <label for="comment">Comment:<br>
+            <label for="email">Alias<br>
+                <input type="text" name="alias" id="email" value="" placeholder="alias"
+                required
+                />
+            </label>
+            <label for="comment">Comment<br>
             <textarea type="text"  name="comment" value=""  id="comment" placeholder="comment"
-            rows="5" cols="20" required
+             cols="3" required
             ></textarea>
         </label>
+        
+        
         <br>
-        <label for="email">email:<br>
-            <input type="email" name="email" value="" inputmode="email" placeholder="email"
-            required
-            />
-        </label>
-        <br><br>
         <button type="submit" onclick="clear">POST</button>
         </form>
         </div>
@@ -55,7 +55,7 @@
         <div class="wrap">
         <div class="images-container">
             <ul id="top-images-list">
-                <li class="top-image"><img src="/images/ai-image0.jpg" alt="ai-imag1"></li>
+                <li class="top-image"><img src="./images/ai-image0.jpg" alt="ai-image0"></li>
                 <li class="top-image"><img src="./images/ai-image7.jpg" alt="ai-image1"></li>
                 <li class="top-image"><img src="./images/ai-image3.jpg" alt="ai-image2"></li>
             </ul>

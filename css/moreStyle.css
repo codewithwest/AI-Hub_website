@@ -1,20 +1,33 @@
 *{
     font-size: large;
 }
+body{
+    width: fit-content;
+}
 .wrap{
-    margin: 0;
-
+    width: fit-content;
+    margin: 0.1%;
     background: linear-gradient(20deg, transparent, rgba(0, 10, 4, 0.5),
     rgba(255, 245, 255, 0.5));
 
 }
 .wrap h1{
-    font-size: 150%;
+    font-size: 140%;
 }
 /* Columns */
 
 .columns h2{
     font-size: 100%;
+    text-align: center;
+}
+.column-wrapper{
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+
 }
 .columns{
     position: relative;
@@ -22,27 +35,27 @@
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 0.4%;
     
+    
 }
 .column-child p{
     margin: 0 15px;
 }
 .column-child{
+    
     border-bottom: 0.7px dotted black;
     margin-left: auto;
     margin-right: auto;
     display: grid;
-    grid-template-columns: "one" "two" "three";
-    
-    width: 99%;
-    
+    grid-template-rows: fit-content;
+    overflow-x: none;
+    width: 100%;
+    text-align: center;
 }
 
 .column1{
     grid: "one";
     height: fit-content; 
-    
-    width: 100%;
-    
+    width: 98%;
     text-align: center;
     
 }
@@ -57,7 +70,6 @@
 .column2{
     grid: "two";
     text-align: center;
-    
     width: 100%;
     height: fit-content;
     border-right: 0.4px dotted firebrick;
@@ -151,7 +163,7 @@ iframe{
     5px -5px 0 0 rgba(54, 176, 206, 0.5) inset;
     grid: "one";
     text-align: center;
-    width: 99.4%;
+    width: 99%;
     background: linear-gradient(20deg, transparent, rgba(230, 240, 230, 0.5));
     margin-top: 7%;
 
@@ -196,7 +208,7 @@ iframe{
     5px -5px 0 0 rgba(54, 176, 206, 0.5) inset;
     position: relative;
     height: 100%;
-    width: 100%;
+    width: 99%;
     border-radius: 7%;  
 }
 
@@ -205,7 +217,7 @@ iframe{
    text-align: center;
     margin-top: 1px;
     grid: "two";
-    width: 99.4%;
+    width: 99%;
     height: 100%;
     margin-bottom: 8%;
     background: linear-gradient(20deg, transparent, rgba(35, 61, 73, 0.5));
@@ -232,7 +244,7 @@ iframe{
     grid: "three";
 
     background: linear-gradient(90deg, transparent, rgba(0, 3, 4, 0.5));
-    width: 99.4%;
+    width: 100%%;
     box-shadow: inset 0 0 -15px -15px  rgb(82, 82, 88);
     
 }
